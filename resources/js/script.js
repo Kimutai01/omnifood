@@ -1,24 +1,46 @@
 const products = [
     {
         name:"pilau", 
-        image: "https://image.shutterstock.com/image-photo/lamb-madghout-popular-arabic-rice-260nw-479385196.jpg" ,
-        price:300
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUlQKopxipnECjIiDmLWJUWXlyNSTFq0xqhJiDeq3&s" ,
+        price:5.00
 
     },
     {
         name:"chicken", 
         image:"https://media.istockphoto.com/photos/grilled-chicken-legs-with-vegetable-skewers-picture-id666710160?b=1&k=20&m=666710160&s=170667a&w=0&h=BoAPEGRbwf48TB-mrxeJZZNse2Es9ThceITXTcgDtrw=" ,
-        price:100
+        price:4.50
 
     }, {
-        name:"beef", 
-        image: "https://media.istockphoto.com/photos/grilled-beef-steaks-picture-id882548344?k=20&m=882548344&s=612x612&w=0&h=9z9GtnI-RbEQCzxJDGDfHw-mMRN87w_ShHD8uCdrc6s=" ,
-        price:100
+        name:"beef stew", 
+        image: "https://media.istockphoto.com/photos/chilli-with-meat-picture-id856600542?k=20&m=856600542&s=612x612&w=0&h=z8-_LZ2fllqcn7rVlssXXCRucQvUdy0d-1UnWRyiosI=" ,
+        price:5.00
 
     }, {
         name:"rice", 
         image: "https://media.istockphoto.com/photos/cooked-rice-picture-id491090528?k=20&m=491090528&s=612x612&w=0&h=oKwbkVWhU_17ZBhB4v3SKOTGT85nmi2YS7KbPPa-x8o=" ,
-        price:200
+        price:3.99
+
+    },
+    {
+        name:"roasted meat", 
+        image: "https://media.istockphoto.com/photos/beef-steaks-on-the-grill-picture-id520421898?k=20&m=520421898&s=612x612&w=0&h=mZQ4hWh32yUoxftPURzLM3O_owT_lpalSoCjkJ8PH0o=" ,
+        price:6.99
+
+    },
+    {
+        name:"Shawarma", 
+        image:"https://media.istockphoto.com/photos/chicken-wrap-picture-id888366454?k=20&m=888366454&s=612x612&w=0&h=L0M1rbD5iqkxaCtkCJQtDvYKTOMlfExzZEA5Nq69Jhg=" ,
+        price:4.50
+
+    }, {
+        name:"ugali and fish", 
+        image: "https://i0.wp.com/kenyayote.com/wp-content/uploads/2019/08/Health-effects-of-eating-fish-Benefits-of-kenya-one-and-china.jpg?ssl=1" ,
+        price:13.00
+
+    }, {
+        name:"french fries", 
+        image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnJpZXN8ZW58MHx8MHx8&w=1000&q=80" ,
+        price:1.99
 
     },
 ]
@@ -26,10 +48,10 @@ const products = [
 const newProducts = document.createElement('div')
 products.forEach(product =>{
     document.querySelector('.bigproducts').innerHTML+= `
-    <div>
-    <p>${product.name}</p>
-    <p>${product.price}</p>
+    <div class="singleproduct">
     <img src=${product.image} alt="product image" />
+    <h3>${product.name}</h3>
+    <p>${product.price}$</p>
     </div>
     
     `

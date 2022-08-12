@@ -86,6 +86,9 @@
     .steps-box:last-child {margin-top: 20px;}
 
     .app-screen { width: 40%;}
+    nav{
+        display: none;
+    }
 
 
 }
@@ -98,8 +101,11 @@
 
 /* small phones: from 0 to 480px */
 @media only screen and (max-width:480px){
-    section {padding: : 25px 0;}
+    section {padding : 25px 0;}
     .contact-form{width:100%}
+    nav{
+        display: none;
+    }
 
 }
 
