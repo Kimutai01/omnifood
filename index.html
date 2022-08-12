@@ -15,8 +15,8 @@
 <body>
     <header>
         <nav>
-            <div class="row">
-                <h3 class="logo">Tasty Foods</h3>
+            <div class="logo-row" >
+                <img src="resources/img/white.png" id="logo-img">
                 <ul class="main-nav">
                     <li><a href="#home">Home page</a></li>
                     <li><a href="#about">About us</a></li>
@@ -29,8 +29,8 @@
         </nav>
         <div class="hero-text-box" id="home">
             <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I'm hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full" href="#contacts">I'm hungry</a>
+            <a class="btn btn-ghost" href="#products">Show me more</a>
         </div>
     </header>
     <section class="section-features" id="about">
@@ -134,10 +134,6 @@
         <div class="bigproducts">
             
         </div>
-        
-   
-
-
     </section>
     <section class="section-cities" id="portfolio">
         <h2>We're currently in these cities</h2>
@@ -235,12 +231,12 @@
                 <blockquote>
                     Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Thika, but no one comes even close to Tasty Foods. Me and my family are so in love!
                 </blockquote>
-                <cite><img src="resources/img/customer-2.jpg"> Joana White</cite>
+                <cite><img src="https://media-exp1.licdn.com/dms/image/C4D03AQELTbU2ptQTRg/profile-displayphoto-shrink_800_800/0/1634030862144?e=1665619200&v=beta&t=judAMzqMIFnQbLzwcb85jKl2cpLCCIZb3pqs7LAPTbU"> Evans Kiprotich</cite>
 
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
-                    I was looking for a quick and easy food delivery service in Maasai mara. I tried a lot of them and ended up with Tasty Foods. Best food delivery service in the Bay Area. Keep up the great work!
+                    I was looking for a quick and easy food delivery service in Maasai mara. I tried a lot of them and ended up with Tasty Foods. Best food delivery service in the Juja. Keep up the great work!
                 </blockquote>
                 <cite><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmIDD5G7H6ZrUFjNh5QhgVcd7zXWDeN1-u3nl5sve3Wg&s"> Samuel Maiyo</cite>
 
@@ -257,8 +253,8 @@
                 <div class="plan-box">
                     <div>
                         <h3>Premium</h3>
-                        <p class="plan-price">$399 <span>/ month</span></p>
-                        <p class="plan-price-meal">That's only 13.30$ per meal</p>
+                        <p class="plan-price">15000ksh <span>/ month</span></p>
+                        <p class="plan-price-meal">That's only 300Ksh per meal</p>
 
                     </div>
                     <div>
@@ -280,8 +276,8 @@
                 <div class="plan-box">
                     <div>
                         <h3>Pro</h3>
-                        <p class="plan-price">$149 <span>/ month</span></p>
-                        <p class="plan-price-meal">That's only 14.90$ per meal</p>
+                        <p class="plan-price">7000Ksh <span>/ month</span></p>
+                        <p class="plan-price-meal">That's only 400 per meal</p>
 
                     </div>
                     <div>
@@ -303,7 +299,7 @@
                 <div class="plan-box">
                     <div>
                         <h3>Starter</h3>
-                        <p class="plan-price">$19 <span>/ month</span></p>
+                        <p class="plan-price">1900Ksh <span>/ month</span></p>
                         <p class="plan-price-meal">&nbsp;</p>
 
                     </div>
@@ -330,7 +326,8 @@
             <h2>We're happy to hear from you</h2>
         </div>
         <div class="row">
-            <form method="post" action="#" class="contact-form">
+            <form action="https://formspree.io/f/xaykyjwg"
+            method="POST" class="contact-form">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
