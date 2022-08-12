@@ -81,7 +81,7 @@ h3 {
 h2::after {
     display: block;
     height: 2px;
-    background-color:#e67e22;
+    background-color:#1b9640;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -102,7 +102,7 @@ h2::after {
 
 /*----------icons---------*/
 .icon-big {
-    color: #e67e22;
+    color: #1b9640;
     font-size: 400%;
     display: block;
     margin-bottom: 10px;
@@ -111,7 +111,7 @@ h2::after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: #1b9640;
     font-size: 140%;
     margin-right: 10px;
     line-height: 120%;
@@ -122,10 +122,10 @@ h2::after {
 /*----------links---------*/
 a:link,
 a:visited{
-    color: #e67e22;
+    color: #1b9640;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
+    border-bottom: 1px solid #1b9640;
     transition: border-bottom 0.2s, color 0.2s;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     -moz-transition: border-bottom 0.2s, color 0.2s;
@@ -164,8 +164,8 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #2d944c;
+    border: 1px solid #2d944c;
     color: #fff;
     margin-right: 15px;
 
@@ -174,26 +174,26 @@ input[type=submit] {
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+    border: 1px solid #2d944c;
+    color: #2d944c;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #cf6d17;
+    background-color: #0a5c23;
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #e67e22;
+    border: 1px solid #2d944c;
 
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #e67e22;
+    border: 1px solid #2d944c;
     color: #fff;
 }
 
@@ -220,18 +220,12 @@ header {
     -o-transform: translate(-50%, -50%);
 }
 
-.logo {
-    height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
 
-}
 
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 35px;
 
 }
 
@@ -256,7 +250,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active  {
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid #2d944c;
     padding: 8px 0;
 
 }
@@ -292,7 +286,7 @@ header {
 }
 
 .meal-photo {
-    width: 100%;
+
     margin: 0;
     overflow: hidden;
     background-color: #000;
@@ -300,9 +294,11 @@ header {
 }
 
 .meal-photo img {
-    opacity: 0.7;
     width: 100%;
-    height: auto;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    opacity: 0.7;
     transform: scale(1.15);
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
@@ -343,6 +339,12 @@ header {
     margin-top: 30px;
 
 }
+.logo{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    float: left;
+    color: #115a77;
+}
 
 .steps-box:last-child {
     padding-left: 3%; 
@@ -364,11 +366,13 @@ header {
 .works-step:last-of-type {
     margin-bottom: 80px;
 }
+.city-features{
+    width: 100%;
+}
 
 .works-step div {
-    color: #e67e22;
-    float: left;
-    border: 2px solid #e67e22;
+    color: #2d944c;
+    border: 2px solid #2d944c;
     display: inline-block;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -388,6 +392,11 @@ header {
     margin-right: 10px;
 
 }
+.section-cities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*--------------------------------*/
 /* Cities*/
@@ -395,15 +404,17 @@ header {
 #cities{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 60px;
 }
-.box img {
-    width: 100%;
-    height: auto;
+#cities img  {
+    object-fit: contain;
+    width: 250px;
+    height: 200px !important;
     margin-bottom: 15px;
 
 }
 
-.city-feature {
+.city-feature{
     margin-bottom: 5px;
 
 }
@@ -497,7 +508,7 @@ cite img {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #e67e22;
+    color: #2d944c;
 }
 
 .plan-price span {
