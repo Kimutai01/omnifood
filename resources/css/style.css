@@ -462,6 +462,38 @@ nav{
 
 }
 
+.new-social{
+    position: relative !important;
+    top: -400px;
+    left: 50px;
+    margin-bottom: 20px;
+}
+.new-social ul{
+    list-style: none;
+    margin-right: 50px;
+
+}
+.new-social ul li{
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+}
+.new-social ul li a{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+}
+.new-link i{
+    font-size: 35px;
+    text-decoration: none !important;
+
+}
 
 
 
